@@ -72,6 +72,7 @@ public class SocialMediaDemo implements Runnable {
         
         List<SocialMediaEntry> entries = new ArrayList<>();
         
+<<<<<<< HEAD
         // Here is the added code
         
         
@@ -79,6 +80,12 @@ public class SocialMediaDemo implements Runnable {
         entries.add(video1);
         entries.add(video2);
         entries.add(video3);
+=======
+        // YouTubeVideo does not implement the correct interface to allow this!
+        //entries.add(video1);
+        //entries.add(video2);
+        //entries.add(video3);
+>>>>>>> 1852cff5b52c45e0d31f8f7808b98bf212bb30d3
         
         DataAnalyzer analyzer = new DataAnalyzer();
         analyzer.analyzeEntries(entries);
