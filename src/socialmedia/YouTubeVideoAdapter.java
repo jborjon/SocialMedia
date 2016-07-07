@@ -3,7 +3,7 @@ package socialmedia;
 public class YouTubeVideoAdapter implements SocialMediaEntry {
 
     // Our adaptee
-    YouTubeVideo video;
+    protected YouTubeVideo video;
 
     // Constructor
     public YouTubeVideoAdapter(YouTubeVideo video) {
