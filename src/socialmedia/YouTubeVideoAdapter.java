@@ -1,13 +1,13 @@
-package socialmedia;
+
 
 public class YouTubeVideoAdapter implements SocialMediaEntry {
 
     // Our adaptee
-    protected YouTubeVideo video;
+    YouTubeVideo video;
 
     // Constructor
     public YouTubeVideoAdapter(YouTubeVideo video) {
-        this.video = video;
+        this.video = new YouTubeVideo(video.getAuthor(), video.getTitle(), video.getDescription());
     }
 
     public String getUser() {

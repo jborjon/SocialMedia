@@ -1,6 +1,3 @@
-package socialmedia;
-
-
 import java.util.List;
 
 /**

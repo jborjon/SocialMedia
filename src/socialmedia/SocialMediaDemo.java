@@ -1,6 +1,3 @@
-package socialmedia;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,25 +60,25 @@ public class SocialMediaDemo implements Runnable {
         
         YouTubeVideo video1 = new YouTubeVideo("MormonMessages", "Bullying",
                 "President Uchtdorf counsels us to stop bullying.");
-
-        SocialMediaEntry video1Adapt = new YouTubeVideoAdapter(video1);
         
+	SocialMediaEntry video1Adapt = new YouTubeVideoAdapter(video1);
+
         YouTubeVideo video2 = new YouTubeVideo("MormonMessages", "Patterns of Light",
                 "Elder Bednar teaches about the Light of Christ.");
-        
-        SocialMediaEntry video2Adapt = new YouTubeVideoAdapter(video2);
-        
+       
+	SocialMediaEntry video2Adapt = new YouTubeVideoAdapter(video2);
+ 
         YouTubeVideo video3 = new YouTubeVideo("Randy Pausch", "The Last Lecture",
                 "Achieving your childhood dreams.");
-        
-        SocialMediaEntry video3Adapt = new YouTubeVideoAdapter(video3);
+
+	SocialMediaEntry video3Adapt = new YouTubeVideoAdapter(video3);
         
         List<SocialMediaEntry> entries = new ArrayList<>();
-        
+	
         // YouTubeVideo does not implement the correct interface to allow this!
         entries.add(video1Adapt);
-        entries.add(video2Adapt);
-        entries.add(video3Adapt);
+	entries.add(video2Adapt);
+	entries.add(video3Adapt);
         
         DataAnalyzer analyzer = new DataAnalyzer();
         analyzer.analyzeEntries(entries);

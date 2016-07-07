@@ -1,4 +1,4 @@
-package socialmedia;
+
 
 /**
  * Encapsulates the data of a YouTube video.
